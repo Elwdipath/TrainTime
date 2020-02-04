@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./assets/style.css">     -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
 </head>
@@ -40,42 +40,49 @@
                         <tr id="tSchedule"></tr>
                         </tbody>
                     </table>
-                    <form>
-                        <div class="form-group">
-                          <label for="tName">Train Name</label>
-                          <input type="name" class="form-control" id="name-input">
-                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                        </div>
-                        <div class="form-group">
-                          <label for="tDestination">Destination</label>
-                          <input type="destination" class="form-control" id="destination-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="tFrequency">Frequency</label>
-                            <input type="frequency" class="form-control" id="frequency-input">
-                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                          </div>
-                          <div class="form-group">
-                            <label for="tNArrival">Next Arrival</label>
-                            <input type="arrival" class="form-control" id="arrival-input">
-                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                          </div>
-                          <div class="form-group">
-                            <label for="mAway">Minutes Away</label>
-                            <input type="away" class="form-control" id="away-input">
-                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                          </div>
-                        <!-- <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div> -->
-                        <button type="submit" class="btn btn-primary" id="sButton">Submit</button>
-                      </form>
                 </div>
             </div>
+                    <hr>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card"></div>
+                        <form>
+                            <div class="form-group">
+                                <label for="tName">Train Name</label>
+                                <input type="name" class="form-control" id="name-input">
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="tDestination">Destination</label>
+                                <input type="destination" class="form-control" id="destination-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="tFrequency">Frequency</label>
+                                <input type="frequency" class="form-control" id="frequency-input">
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="fTrain">First Train</label>
+                                <input type="first" class="form-control" id="first-input" placeholder="(HH:mm - military time)">
+                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            
+                            <!-- <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div> -->
+                            <button id="subB" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        </div>
+                </div>
+            </div>    
+                    
     
         <!-- Add Train -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Javascript/config.js"></script>
+    <script src="./Javascript/script.js"></script>
     
 </body>
 </html>
