@@ -11,4 +11,10 @@ const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  
+  let db = firebase.database();
+
+  let tN;
+  let tD;
+  let tF;
+  let nA;
+  let mA;
