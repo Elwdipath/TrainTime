@@ -16,8 +16,8 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
             <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 class="display-4">Train Time!</h1>
+            <p class="lead">The train goes Choo Choo</p>
             </div>
         </div>
     <div class="container">
@@ -26,7 +26,7 @@
         <!-- Current Schedule -->
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <table class="table">
+                    <table class="table" id="tSchedule">
                         <thead class="thead-light">
                         <tr>
                             <th scope="col">Train Name</th>
@@ -36,12 +36,17 @@
                             <th scope="col">Minutes Away</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr id="tSchedule"></tr>
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </div>
+                        <!-- <tr id="tSchedule"></tr> -->
+            <!-- <div class="row justify-content-center"><
+                <div class="col-md-8 ">
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr id="tSchedule"></tr>
+                    </table> -->      
                     <hr>
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -49,23 +54,23 @@
                         <form>
                             <div class="form-group">
                                 <label for="tName">Train Name</label>
-                                <input type="name" class="form-control" id="name-input">
+                                <input type="text" class="form-control" id="name-input">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                             <div class="form-group">
                                 <label for="tDestination">Destination</label>
-                                <input type="destination" class="form-control" id="destination-input">
+                                <input type="text" class="form-control" id="destination-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train-time-input">First Train Time(HH:mm - military time)</label>
+                                <input type="first-time" class="form-control" id="first-train-time-input" placeholder="Enter Time">
                             </div>
                             <div class="form-group">
                                 <label for="tFrequency">Frequency</label>
-                                <input type="frequency" class="form-control" id="frequency-input">
+                                <input type="text" class="form-control" id="frequency-input">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="form-group">
-                                <label for="fTrain">First Train</label>
-                                <input type="first" class="form-control" id="first-input" placeholder="(HH:mm - military time)">
-                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                            </div>
+                            
                             
                             <!-- <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -73,9 +78,9 @@
                             </div> -->
                             <button id="subB" type="submit" class="btn btn-primary">Submit</button>
                         </form>
-                        </div>
                 </div>
-            </div>    
+            </div>
+    </div>    
                     
     
         <!-- Add Train -->
