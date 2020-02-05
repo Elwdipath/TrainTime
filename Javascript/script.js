@@ -32,7 +32,7 @@
         tN = $("#name-input").val().trim();
         tD = $("#destination-input").val().trim();
         tF = $("#frequency-input").val().trim();
-        fT = $("first-input").val().trim();
+        fT = $("first-input").val()
 
         db.ref().push({
           trainName: tN,
